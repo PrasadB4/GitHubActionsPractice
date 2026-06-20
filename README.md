@@ -1,2 +1,2 @@
-# GitHubActions
-This repository is meant for implementation of CI/CD in GitHub Actions
+# GitHubActionsPractice
+This repository is meant for implementation of CI in GitHub Actions.
