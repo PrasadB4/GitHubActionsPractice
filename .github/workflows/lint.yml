@@ -1,7 +1,7 @@
 name: Auto Linter
 on: 
   push:
-    paths: "*.py"
+    paths: ".github/workflows/*.py"
 
 jobs:
   code: 
