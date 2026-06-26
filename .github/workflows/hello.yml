@@ -1,0 +1,22 @@
+# workflow
+#Should have name
+name: Hello
+on: 
+  workflow_dispatch: 
+# jobs
+# should be inside the workflow
+jobs:
+  # 1st job, give indentation
+  say-hello:
+    runs-on: ubuntu-latest
+    # creates an Ephermal (temporary) ec2 instance and the instance gets deleted as soon as the task is done
+    # Ephermal container will have steps to execute, hence, name those steps and use run:, run has the command
+    steps:
+      - name: say hello to everyone
+        run: echo "Hello Dosto"
+  
+# steps
+# should be inside jobs
+
+# actions
+# should be inside steps
