@@ -9,3 +9,7 @@ jobs:
     steps:
       - name: Checkout The Code
         uses: actions/checkout@v7
+      - name: Install Linter
+        run: pip install ruff
+      - name: Run Linter
+        run: ruff check .
