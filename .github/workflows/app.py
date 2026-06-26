@@ -1,4 +1,4 @@
-# This code is from https://github.com/LondheShubham153/devboard
+# This code is from https://github.com/LondheShubham153/devboard and is used only to verify linter pipeline as of now.
 
 from flask import Flask, render_template
 app = Flask(__name__)
