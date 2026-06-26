@@ -1,0 +1,11 @@
+name: Auto Linter
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout The Code
+        uses: actions/checkout@v7
