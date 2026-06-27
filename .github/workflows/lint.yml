@@ -2,14 +2,20 @@ name: Auto Linter
 on: 
   push:
     paths: ".github/workflows/*.py"
+    # This step instructs the github that the pipeline should be triggered when any .py files are being pushed within .github/workflows/ folder
 
 jobs:
   code: 
     runs-on: ubuntu-latest
     steps:
+        # This job will checkout the code from the repository and bring it to the working directory      
       - name: Checkout The Code
         uses: actions/checkout@v7
+        
+        # This step will install the Linter
       - name: Install Linter
         run: pip install ruff
+
+        # This step will perform the python linting
       - name: Run Linter
         run: ruff check .
