@@ -11,6 +11,11 @@ jobs:
         # This job will checkout the code from the repository and bring it to the working directory      
       - name: Checkout The Code
         uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14' 
         
         # This step will install the Linter
       - name: Install Linter
